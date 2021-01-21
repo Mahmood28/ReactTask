@@ -1,12 +1,15 @@
-const Books = (props) => {
+import { ProductWrapper } from "../styles";
+
+const Book = (props) => {
   return (
-    <div className="books">
-      <img src={props.product.image} alt={props.product.name} height="300" />
+    <ProductWrapper>
+      <img src={props.product.image} alt={props.product.name} />
       <p>
-        {props.product.name} <br></br> {props.product.price} BD
+        {props.product.name} <br></br>
+        <p className="product-price">{props.product.price} BD</p>
       </p>
-    </div>
+    </ProductWrapper>
   );
 };
 
-export default Books;
+export default Book;

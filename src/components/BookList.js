@@ -1,13 +1,13 @@
-import "../App.css";
-import Books from "./Books";
+import { ListWrapper } from "../styles";
+import Book from "./Books";
 import products from "../products";
 
 const BookList = () => {
   const bookList = products.map((product) => (
-    <Books key={product.id} product={product} />
+    <Book key={product.id} product={product} />
   ));
 
-  return <center>{bookList}</center>;
+  return <ListWrapper>{bookList}</ListWrapper>;
 };
 
 export default BookList;
