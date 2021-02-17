@@ -5,7 +5,7 @@ const StoreHome = () => {
     <>
       <Title> Bed, Bookstore, and Beyond </Title>
       <Description> The Best Place to Nap and Read </Description>
-      <ShopImage src="bookstore.jfif" />
+      <ShopImage src="bookstore.jfif" alt="Bookstore" />
       <br></br>
     </>
   );
